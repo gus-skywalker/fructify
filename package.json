@@ -1,6 +1,6 @@
 {
   "name": "fructify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Replaces null/undefined values with random fruit emojis to keep your app sweet and safe.",
   "main": "index.js",
   "types": "index.d.ts",
