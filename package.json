@@ -1,0 +1,40 @@
+{
+  "name": "fructify",
+  "version": "1.0.0",
+  "description": "Replaces null/undefined values with random fruit emojis to keep your app sweet and safe.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "node tests/test.js"
+  },
+  "keywords": [
+    "null",
+    "undefined",
+    "safety",
+    "emoji",
+    "fruit",
+    "proxy",
+    "utility",
+    "fun"
+  ],
+  "author": "gus-skywalker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gus-skywalker/fructify"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/gus-skywalker/fructify/issues"
+  },
+  "homepage": "https://github.com/gus-skywalker/fructify#readme",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
