@@ -32,7 +32,7 @@
             };
             
             // Usa Fructify para garantir que nunca teremos null/undefined
-            const safeData = fructify.fructify(formData, { replaceFalsy: true });
+            const safeData = fructifyAPI.fructify(formData, { replaceFalsy: true });
             
             // Mostra resultado visual
             document.getElementById('output').innerHTML = `
