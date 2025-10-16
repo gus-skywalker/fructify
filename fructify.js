@@ -137,11 +137,23 @@
   };
 
   // Universal export (UMD)
-  if (typeof module !== 'undefined' && module.exports) {
-    module.exports = api;
-  } else if (typeof define === 'function' && define.amd) {
+  if (typeof define === 'function' && define.amd) {
+    // AMD
     define(() => api);
+  } else if (typeof exports === 'object' && typeof module !== 'undefined') {
+    // CommonJS (Node.js)
+    module.exports = api;
   } else {
-    global.fructify = api;
+    // Browser global
+    if (typeof global === 'undefined' && typeof window !== 'undefined') {
+      global = window;
+    }
+  global.fructifyAPI = api;
+  global.fructify = api.fructify;
+  global.fructifyObject = api.fructifyObject;
+  global.fructifyMethod = api.fructifyMethod;
+  global.randomFruit = api.randomFruit;
   }
-})(typeof globalThis !== 'undefined' ? globalThis : window);
+})(typeof globalThis !== 'undefined' ? globalThis : 
+    typeof window !== 'undefined' ? window : 
+    typeof global !== 'undefined' ? global : this);
