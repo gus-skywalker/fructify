@@ -44,7 +44,6 @@
         if (current instanceof Date || 
             current instanceof RegExp || 
             current instanceof Promise ||
-            Buffer.isBuffer(current) ||
             current.constructor.name !== 'Object') {
           return current;
         }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário com Fructify</title>
+    <script src="../fructify.js"></script>
+    <style>
+        .fruit { font-size: 24px; margin: 0 5px; }
+        .output { background: #f0f0f0; padding: 20px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>📝 Meu Formulário</h1>
+    
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Nome (opcional)">
+        <input type="email" id="email" placeholder="Email (opcional)">
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <div class="output" id="output"></div>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value || null,
+                email: document.getElementById('email').value || undefined,
+                timestamp: new Date()
+            };
+            
+            // Usa Fructify para garantir que nunca teremos null/undefined
+            const safeData = fructify.fructify(formData, { replaceFalsy: true });
+            
+            // Mostra resultado visual
+            document.getElementById('output').innerHTML = `
+                <h3>Dados Processados:</h3>
+                <p><strong>Nome:</strong> ${safeData.name}</p>
+                <p><strong>Email:</strong> ${safeData.email}</p>
+                <p><strong>Timestamp:</strong> ${safeData.timestamp}</p>
+            `;
+            
+            console.log('Dados seguros:', safeData);
+        });
+    </script>
+</body>
+</html>
