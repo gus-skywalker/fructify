@@ -3,9 +3,9 @@
 
 Replace boring null and undefined values with delicious fruit emojis — because life's too short for missing data. 🍎🍌🍇
 
-![npm version](https://img.shields.io/npm/v/fructify)(https://www.npmjs.com/package/fructify)
-![license](https://img.shields.io/npm/l/fructify)
+[![npm version](https://img.shields.io/npm/v/fructify)](https://www.npmjs.com/package/fructify)
 [![npm downloads](https://img.shields.io/npm/dm/fructify)](https://www.npmjs.com/package/fructify)
+[![license](https://img.shields.io/npm/l/fructify)](LICENSE)
 
 ## ✨ What is Fructify?
 
