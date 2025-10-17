@@ -2,9 +2,9 @@
 <html>
 <head>
     <title>Formulário com Fructify</title>
-    <script src="../fructify.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/gh/gus-skywalker/fructify@main/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fructify@1.0.1"></script> -->
+    <!-- <script src="../fructify.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/gus-skywalker/fructify@main/index.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/fructify@1.0.2/fructify.js"></script>
     <style>
         .fruit { font-size: 24px; margin: 0 5px; }
         .output { background: #f0f0f0; padding: 20px; margin: 20px 0; }
@@ -32,7 +32,7 @@
             };
             
             // Usa Fructify para garantir que nunca teremos null/undefined
-            const safeData = fructifyAPI.fructify(formData, { replaceFalsy: true });
+            const safeData = fructifyAPI.fructifyObject(formData, { replaceFalsy: true });
             
             // Mostra resultado visual
             document.getElementById('output').innerHTML = `
