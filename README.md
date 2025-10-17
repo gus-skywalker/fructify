@@ -3,8 +3,9 @@
 
 Replace boring null and undefined values with delicious fruit emojis — because life's too short for missing data. 🍎🍌🍇
 
-![npm version](https://img.shields.io/npm/v/fructify)
+![npm version](https://img.shields.io/npm/v/fructify)(https://www.npmjs.com/package/fructify)
 ![license](https://img.shields.io/npm/l/fructify)
+[![npm downloads](https://img.shields.io/npm/dm/fructify)](https://www.npmjs.com/package/fructify)
 
 ## ✨ What is Fructify?
 
@@ -220,6 +221,13 @@ fructify(user?.name) // ✅ '🍎' = it was null!
 - 🐛 Debugging with visibility
 
 **Because sometimes, the best fix for a technical problem is a creative approach.** 🍎✨
+
+## 💝 Support This Project
+
+Your support helps me maintain Fructify and create more amazing tools!
+
+[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-%E2%9D%A4-%23db61a2?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/gus-skywalker)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/gugadam)
 
 ## 📄 License
 
